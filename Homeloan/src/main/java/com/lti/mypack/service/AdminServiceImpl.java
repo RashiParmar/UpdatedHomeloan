@@ -47,12 +47,6 @@ public class AdminServiceImpl implements AdminService {
 	public boolean deleteAdmin(Admin admin) {
 		adminRepo.delete(admin);
 		return false;
-	}
-
-	
-	
-
-	
-	
+	}	
 
 }

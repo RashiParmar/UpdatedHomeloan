@@ -9,5 +9,5 @@ import com.lti.mypack.model.Account;
 
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Integer> {
-	public Account findByApplicationid(String applicationid);
+	public Account findByApplicationid(int applicationid);
 }

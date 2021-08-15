@@ -23,16 +23,16 @@ public class ApplicationServiceImpl implements ApplicationService{
 	}
 
 	@Override
-	public boolean addApplication(Application application) {
-		appRepo.save(application);
-		return true;
+	public Application addApplication(Application application) {
+		return appRepo.save(application);
+		
 	}
 
-	@Override
-	public boolean deleteApp(Application application) {
-		appRepo.delete(application);
-		return false;
-	}
+//	@Override
+//	public boolean deleteApp(int applicationid) {
+//		appRepo.deleteById(applicationid);
+//		return true;	
+//	}
 
 //	@Override
 //	public boolean updateApplication(Application application) {

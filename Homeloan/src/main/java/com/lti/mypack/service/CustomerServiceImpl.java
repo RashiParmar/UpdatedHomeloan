@@ -25,9 +25,9 @@ public class CustomerServiceImpl implements CustomerService{
 	CustomerRepository customerRepo;
 
 	@Override
-	public boolean addValue(Customer customer) {
-		customerRepo.save(customer);
-		return true;
+	public Customer addValue(Customer customer) {
+		return customerRepo.save(customer);
+		
 	}
 	@Override
 	public List<Customer> getCustomer() {

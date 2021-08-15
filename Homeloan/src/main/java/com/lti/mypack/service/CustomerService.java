@@ -9,7 +9,7 @@ import com.lti.mypack.model.Customer;
 public interface CustomerService {
 
 	public List<Customer> getCustomer();
-	public boolean addValue(Customer customer);
+	public Customer addValue(Customer customer);
 	public boolean updateCustomer(Customer customer);
 	public boolean deleteCustomer(Customer customer);
 	

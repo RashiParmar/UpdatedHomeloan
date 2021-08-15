@@ -23,15 +23,15 @@ public class AccountServiceImpl implements AccountService{
 	}
 	
 	@Override
-	public Account findAccount1(String applicationid) {
+	public Account findAccount1(int applicationid) {
 		// TODO Auto-generated method stub
 		return accRepo.findByApplicationid(applicationid);
 	}
 
 	@Override
-	public boolean addAccount(Account account) {
-		accRepo.save(account);
-		return false;
+	public Account addAccount(Account account) {
+		return accRepo.save(account);
+		
 	}
 
 	@Override
@@ -53,11 +53,5 @@ public class AccountServiceImpl implements AccountService{
 		accRepo.delete(account);
 		return false;
 	}
-
-	
-
-	
-
-	
 
 }

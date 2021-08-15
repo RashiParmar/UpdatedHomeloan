@@ -29,7 +29,7 @@ public class CustomerContoller {
 	}
 	
 	@PostMapping("/customer")
-	public boolean addValue(@RequestBody Customer customer)
+	public Customer addValue(@RequestBody Customer customer)
 	{
 		System.out.println(customer.getAddress());
 		return cService.addValue(customer);

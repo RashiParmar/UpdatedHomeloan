@@ -17,9 +17,9 @@ public class DocumentServiceimpl implements DocumentService {
 	DocumentRepository docRepo;
 	
 	@Override
-	public boolean addDocument(Document document) {
-		docRepo.save(document);
-		return true;
+	public Document addDocument(Document document) {
+		return  docRepo.save(document);
+		
 	}
 
 	@Override

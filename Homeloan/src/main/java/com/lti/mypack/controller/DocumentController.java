@@ -30,7 +30,7 @@ public class DocumentController {
 
 	@PostMapping("/document")
 	
-	public boolean addDocument(@RequestBody Document document) {
+	public Document addDocument(@RequestBody Document document) {
 		//Customer c=new Customer();
 		//c.setCustomerid(@PathVariable("custid")int custid)
 		//c.setCustomerid(105);

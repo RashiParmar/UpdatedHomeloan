@@ -36,7 +36,7 @@ public class AdminController {
 	}
 	
 	@GetMapping("/byapplicationId/{applicationid}")
-	public Account getAdminByApplicationid(@PathVariable(value="applicationid") String applicationid)
+	public Account getAdminByApplicationid(@PathVariable(value="applicationid") int applicationid)
 	{
 		return accService.findAccount1(applicationid);
 	}

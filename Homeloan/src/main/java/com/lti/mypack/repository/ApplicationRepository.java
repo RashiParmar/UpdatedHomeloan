@@ -8,4 +8,5 @@ import com.lti.mypack.model.Application;
 @Repository
 public interface ApplicationRepository extends JpaRepository<Application, String>{
 
+
 }

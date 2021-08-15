@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,7 +31,7 @@ public class ApplicationController {
 	}
 	
 	@PostMapping("/application")
-	public boolean addApplication(@RequestBody Application application) {
+	public Application addApplication(@RequestBody Application application) {
 		return appService.addApplication(application);
 	}
 //	@PutMapping("/application")
@@ -39,10 +40,9 @@ public class ApplicationController {
 //	}
 	
 	
-	@DeleteMapping("/application")
-	public boolean deleteAccount(@RequestBody Application application) {
-		return appService.deleteApp(application);
-	
+//	@DeleteMapping("/application")
+//	public boolean deleteApp(@PathVariable(value="applicationid") int applicationid) {
+//		return appService.deleteApp(applicationid);
 
-}
+//}
 }

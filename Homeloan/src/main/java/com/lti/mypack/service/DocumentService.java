@@ -8,7 +8,7 @@ import com.lti.mypack.model.Document;
 public interface DocumentService {
 	public List<Document> getdocument();
 	
-	public boolean addDocument(Document document);
+	public Document addDocument(Document document);
 
 	public boolean updateDocument(Document document);
 
